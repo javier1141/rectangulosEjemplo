@@ -1,5 +1,35 @@
 
+<div id="layout_total">
+  <p>Rectangulos</p>
+  <p>1)Ingrese la coordenada del primer rectangulo</p>
+  <p>Ingrese la coordenada del punto superior izquierdo</p>
+  <div id="layout_x1y1">
+    <p>x1: </p><input type="input" [(ngModel)]="Xa1"/>
+    <p>y1: </p><input type="input" [(ngModel)]="Ya1"/>
+  </div>
+  <p>Ingrese la coordenada del punto inferior derecho</p>
+  <div id="layout_x2y2">
+    <p>x2: </p><input type="input" [(ngModel)]="Xa2"/>
+    <p>y2: </p><input type="input" [(ngModel)]="Ya2"/>
+  </div>
 
+  <p>2)Ingrese la coordenada del Segundo rectangulo</p>
+  <p>Ingrese la coordenada del punto superior izquierdo</p>
+  <div id="layout_x3y3">
+    <p>x1: </p><input type="input" [(ngModel)]="Xb1"/>
+    <p>y1: </p><input type="input" [(ngModel)]="Yb1"/>
+  </div>
+  <p>Ingrese la coordenada del punto inferior derecho</p>
+  <div id="layout_x4y4">
+    <p>x2: </p><input type="input" [(ngModel)]="Xb2"/>
+    <p>y2: </p><input type="input" [(ngModel)]="Yb2"/>
+  </div>
+
+</div>
+<button (click)="Evaluar()">Evaluar</button>
+
+<p>Resultado</p>
+<p >{{resultado}}</p>
 
 
 <router-outlet></router-outlet>
